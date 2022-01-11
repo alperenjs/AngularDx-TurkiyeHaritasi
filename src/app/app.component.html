@@ -1,0 +1,23 @@
+<dx-vector-map
+  id="map-container"
+  [zoomFactor]="11"
+  [center]="[35.632085800170955,39.153472900390796]"
+  [projection]="projection"
+  [touchEnabled]="false"
+  [wheelEnabled]="false"
+  (onClick)="selectCity($event)"
+>
+  <dxo-title
+    text="Türkiye Haritası"
+    subtitle="with angular - devextreme & by AlperenS"
+  ></dxo-title>
+  <dxo-export [enabled]="true"></dxo-export>
+
+  <dxi-layer
+    [dataSource]="pangaeaContinents"
+    name="continents"
+    [customize]="customizeLayer"
+  >
+    <dxo-label [enabled]="true" dataField="name"></dxo-label>
+  </dxi-layer>
+</dx-vector-map>
