@@ -1,2 +1,5 @@
 # AngularDx-TurkiyeHaritasi
-Created with CodeSandbox
+
+Angular Vector Map created with DevExpress component.
+
+Türkiye datası eklenip, click event örneği eklenmiştir.
